@@ -5,4 +5,4 @@ Desenvolvi esse app por uma necessidade de trabalho, onde vi uma certa dificulda
 Utilizei Kotlin como linguagem principal, em algumas classes usei Java, para banco de dados usei SQLite.
 Utilizei também uma API para ler o código chamada CODE-SCANNER!
 
-#O APK está disponível nessa mesma branch.
+# O APK está disponível nessa mesma branch.
