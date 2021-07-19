@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#292C34">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/scanner_view"
+        app:frameColor="@color/bandtec2"
+        app:autoFocusButtonColor="@color/bandtec2"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@color/bandtec2"
+        app:flashButtonVisible="true"
+        app:maskColor="#E832B9CD"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scanner_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnInserir"
+            android:layout_width="243dp"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@color/bandtec2"
+            android:fontFamily="@font/exo_2_black"
+            android:text="Inserir serial number manualmente"
+            android:textColor="@color/bandtec1"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnExportar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnExportar"
+            android:layout_width="158dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+
+            android:background="@color/bandtec2"
+            android:fontFamily="@font/exo_2_black"
+            android:text="exportar csv"
+            android:textColor="@color/bandtec1"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnInserir"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_below="@id/linear1"
+    android:weightSum="4" >
+
+    <TextView
+       android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:background="#292C34"
+        android:padding="1dip"
+        android:text="Modelo"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="@color/bandtec2"
+        android:fontFamily="@font/exo_2_bold"
+        android:textFontWeight="900"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#292C34"
+        android:padding="1dip"
+        android:text="HSL"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:fontFamily="@font/exo_2_bold"
+        android:textColor="@color/bandtec2" />
+    <TextView
+        android:padding="1dip"
+        android:layout_height="wrap_content"
+        android:text="Serial Number"
+        android:fontFamily="@font/exo_2_bold"
+        android:layout_width="120dp"
+        android:layout_weight="1"
+        android:textColor="@color/bandtec2"
+        android:textAlignment="center"
+        android:background="#292C34"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:background="#292C34"
+        android:fontFamily="@font/exo_2_bold"
+        android:padding="1dip"
+        android:layout_weight="1"
+        android:text="Patrimônio"
+        android:textAlignment="center"
+        android:textColor="@color/bandtec2" />
+
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:id="@+id/scroll"
+        android:background="#292C34"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tabela"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:stretchColumns="1"
+            android:background="#292C34"
+            >
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

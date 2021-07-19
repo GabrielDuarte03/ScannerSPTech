@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ScannerBandtec</string>
+
+    <string-array name="maquinas">
+        <item>Selecione</item>
+        <item>Dell Linux</item>
+        <item>Dell Windows</item>
+        <item>HP Preta</item>
+        <item>HP Cinza</item>
+        <item>HP Prata</item>
+
+    </string-array>
+
+</resources>

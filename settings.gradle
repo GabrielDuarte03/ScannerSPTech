@@ -1,0 +1,2 @@
+rootProject.name = "ScannerBandtec"
+include ':app'

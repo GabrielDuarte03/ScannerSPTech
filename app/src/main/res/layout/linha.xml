@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#292C34"
+        android:layout_margin="1dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/vai"
+        >
+
+        <TextView
+            android:id="@+id/modelo"
+            android:layout_width="90dp"
+            android:background="#292C34"
+            android:padding="1dip"
+            android:text="Modelo"
+            android:fontFamily="@font/exo_2"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/hsl"
+            android:layout_width="70dp"
+            android:background="#292C34"
+            android:padding="1dip"
+            android:fontFamily="@font/exo_2"
+            android:text="HSL"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:padding="1dip"
+            android:id="@+id/sn"
+            android:fontFamily="@font/exo_2"
+            android:text="Serial Number"
+            android:layout_width="120dp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:background="#292C34"/>
+
+        <TextView
+            android:id="@+id/patri"
+            android:layout_width="100dp"
+            android:fontFamily="@font/exo_2"
+            android:background="#292C34"
+            android:padding="1dip"
+            android:text="Patrimônio"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+
+    </TableRow>
